@@ -2,9 +2,9 @@
 1. Descargar archivo
 2. Copiar la carpeta combatiendocreencias en www de tu wampp o xampp
 3. Ir a la carpeta combatiendocreencias->aplication->config->config.php
-  3.1 Cambiar puerto 8080 por el que usas en: $config['base_url'] = 'http://localhost:8080/combatiendocreencias/';
+3.1 Cambiar puerto 8080 por el que usas en: $config['base_url'] = 'http://localhost:8080/combatiendocreencias/';
 4. Ir a la carpeta combatiendocreencias->aplication->config->database.php
-  4.1 Buscar:
+4.1 Buscar:
       NOTA**: $db['default'] = array(
         'dsn'	=> '',
         'hostname' => 'localhost',
