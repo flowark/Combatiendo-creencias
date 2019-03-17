@@ -2,10 +2,11 @@
 1. Descargar archivo
 2. Copiar la carpeta combatiendocreencias en www de tu wampp o xampp
 3. Ir a la carpeta combatiendocreencias->aplication->config->config.php
-3.1 Cambiar puerto 8080 por el que usas en: $config['base_url'] = 'http://localhost:8080/combatiendocreencias/';
+- 3.1 Cambiar puerto 8080 por el que usas en: $config['base_url'] = 'http://localhost:8080/combatiendocreencias/';
 4. Ir a la carpeta combatiendocreencias->aplication->config->database.php
-4.1 Buscar:
-      NOTA**: $db['default'] = array(
+- 4.1 Buscar:
+```
+      $db['default'] = array(
         'dsn'	=> '',
         'hostname' => 'localhost',
         'username' => 'root',
@@ -26,15 +27,16 @@
         'failover' => array(),
         'save_queries' => TRUE
       );
-      
-      Cambiar username y password despues de la flecha por el username y password que usas en tu wampp p xampp
+ ```
+ - Cambiar username y password despues de la flecha por el username y password que usas en tu wampp p xampp
  5. Ir a la carpeta combatiendocreencias->bd
-    5.1 Exportar creencias.sql a tu base de datos.
+ - 5.1 Exportar creencias.sql a tu base de datos.
  6. Ingresar en el navegador : http://localhost:puerto puesto por ti segun el que usas/combatiendocreencias/
  
  7. Visualiza la pagina
  
  CONTENIDO
+ ```
  carpeta combatiendocreencias->aplication->controllers->Principal.php (llamadas de las vistas, implementacion de logeo etc)
                                          ->models->Bases.php (queries a la BD)
                                          ->views-> (Contenido de las vistas)
@@ -54,5 +56,5 @@
     nosotros.php (vista del apartado nosotros)
     politica_privacidad.php (vista del apartado politica privacidad)
     principal.php (vista de la pagina de inicio)
-    
+```
     NOTA**: PUEDES IR AÑADIENDO MAS VISTAS Y PARA VERLAS TE TIENES QUE MOVER ENTRE CONTROLLERS, MODELS Y VIEWS 
