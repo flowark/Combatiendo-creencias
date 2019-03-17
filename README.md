@@ -5,7 +5,7 @@
   3.1 Cambiar puerto 8080 por el que usas en: $config['base_url'] = 'http://localhost:8080/combatiendocreencias/';
 4. Ir a la carpeta combatiendocreencias->aplication->config->database.php
   4.1 Buscar:
-      **$db['default'] = array(
+      /* $db['default'] = array(
         'dsn'	=> '',
         'hostname' => 'localhost',
         'username' => 'root',
@@ -26,7 +26,7 @@
         'failover' => array(),
         'save_queries' => TRUE
       );
-      
+      */
       Cambiar username y password despues de la flecha por el username y password que usas en tu wampp p xampp
  5. Ir a la carpeta combatiendocreencias->bd
     5.1 Exportar creencias.sql a tu base de datos.
