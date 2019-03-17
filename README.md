@@ -5,7 +5,7 @@
   3.1 Cambiar puerto 8080 por el que usas en: $config['base_url'] = 'http://localhost:8080/combatiendocreencias/';
 4. Ir a la carpeta combatiendocreencias->aplication->config->database.php
   4.1 Buscar:
-      $db['default'] = array(
+      **$db['default'] = array(
         'dsn'	=> '',
         'hostname' => 'localhost',
         'username' => 'root',
